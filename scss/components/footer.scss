@@ -1,0 +1,67 @@
+footer {
+  margin: 5rem 0 0 0;
+
+  .bar1,
+  .bar2 {
+    @extend %display-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+  }
+
+  .bar1 {
+    @extend %bg-athens-gray;
+    @extend %flex-direction-column;
+    height: 360px;
+    padding: 37px 20px;
+
+    .img-top {
+      @extend %display-flex;
+      margin: 0 0 40px 0;
+      div {
+        @extend %display-flex;
+        @extend %flex-direction-column;
+
+        img {
+          width: 32px;
+        }
+
+        a {
+          color: #000;
+        }
+      }
+    }
+
+    a {
+      @extend %font-myriad;
+      font-size: 14px;
+      line-height: 23px;
+      padding: 5px 1em 5px 0;
+
+      &.top {
+        @extend %text-uppercase;
+      }
+
+      &.email {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 3.86px;
+        color: #000;
+      }
+    }
+
+    p {
+      @extend %font-myriad;
+      @extend %font-size12;
+      letter-spacing: 2.57px;
+      line-height: 14px;
+    }
+
+    figure {
+      margin: 40px 0 0 0;
+    }
+  }
+
+  .bar2 {
+    height: 218px;
+  }
+}

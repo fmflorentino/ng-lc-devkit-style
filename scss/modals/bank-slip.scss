@@ -1,0 +1,139 @@
+app-modal-bank-info {
+  @extend %display-flex;
+  @extend %flex-direction-column;
+  @extend .justify-content-center;
+  height: 450px;
+  width: 628px;
+
+  h2,
+  p {
+    @extend %font-myriad;
+    @extend %display-block;
+  }
+
+  h2 {
+    @extend %color-wewak;
+    @extend %text-uppercase;
+    @extend %margin0;
+    font-size: 20px;
+    letter-spacing: 3.33px;
+  }
+
+  p {
+    @extend %color-dusty-gray;
+    font-size: 13px;
+    margin: 21px 0 0 0;
+  }
+
+  .bank-information {
+    @extend %width100;
+    padding: 0 125px;
+    margin: 43px 0 0 0;
+
+    .info-detail {
+      @extend %display-flex;
+      @extend %flex-direction-column;
+
+      p,
+      span {
+        font-size: 13px;
+      }
+
+      p {
+        @extend %color-wewak;
+        @extend %text-uppercase;
+        @extend %margin0;
+      }
+
+      span {
+        @extend %color-dusty-gray;
+      }
+    }
+
+    a {
+      @extend %display-flex;
+      @extend %color-boston-blue;
+      @extend %text-center;
+      font-size: 13px;
+      margin: 31px 0 0 0;
+    }
+  }
+
+  .action-buttons {
+    @extend %width100;
+    padding: 0 49px;
+    margin: 50px 0 0 0;
+
+    button {
+      @extend %text-uppercase;
+      border-radius: 0;
+      box-shadow: none !important;
+      width: calc(50% - 10px);
+      height: 50px;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+
+      &.next {
+        @extend %font-myriad-bold;
+        @extend %bg-wewak;
+        color: #fff;
+      }
+
+      &.back {
+        @extend %font-myriad;
+        @extend %color-wewak;
+        border: 1px solid $wewak;
+      }
+
+      &.mob-only {
+        @extend %display-none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:678px) {
+  app-modal-bank-info {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    .text-top {
+      padding: 0 30px;
+
+      .detail {
+        text-align: center;
+        padding: 20px;
+      }
+    }
+
+    .bank-information {
+      padding: 0 30px;
+
+      a {
+        display: none;
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 30px;
+
+      button {
+        width: 100%;
+        height: 65px;
+        margin: 0 0 10px 0;
+        justify-content: center;
+
+        &.mob-only {
+          display: flex;
+        }
+      }
+    }
+
+  }
+}

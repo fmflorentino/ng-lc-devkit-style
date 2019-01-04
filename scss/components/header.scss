@@ -1,0 +1,78 @@
+app-header {
+  @extend %display-flex;
+  @extend %width100;
+  height: 54px;
+
+  header {
+    border-bottom: 1px solid $mercury;
+    padding: 0.5rem 1rem;
+
+    figure {
+      @extend %margin0;
+
+      img {
+        height: 37px;
+      }
+    }
+
+    app-user-menu {
+      display: flex;
+
+      .user-data {
+        @extend %display-flex;
+        @extend %flex-direction-column;
+
+        span,
+        a {
+          @extend %text-uppercase;
+        }
+
+        span {
+          @extend %display-block;
+          @extend %font-myriad;
+          @extend %font-size12;
+          @extend %color-wewak;
+        }
+
+        a {
+          @extend %color-dusty-gray;
+          font-size: 10px;
+        }
+      }
+
+      .icon {
+        @extend %display-flex;
+        @extend .align-items-center;
+        .profile {
+          background-image: url(/assets/images/icon-user.svg);
+          background-repeat: no-repeat;
+          background-position: 10px 0;
+          background-size: 33px;
+          border: 0;
+          width: 60px;
+          height: 33px;
+        }
+
+        i {
+          width: 8px;
+          height: 5px;
+          display: inline-block;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 8px;
+
+          &.arrow-down {
+            background-image: url(/assets/images/ico-arrow-down-pink.svg);
+          }
+        }
+      }
+    }
+  }
+
+  header,
+  header .container-fluid,
+  header .row {
+    @extend %width100;
+    @extend %height100;
+  }
+}

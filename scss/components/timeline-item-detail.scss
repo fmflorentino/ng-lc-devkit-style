@@ -1,0 +1,58 @@
+lc-timeline-item-detail {
+  @extend %display-flex;
+  @extend %width100;
+  @extend %bg-athens-gray;
+  height: 100px;
+  z-index: -1;
+
+  .img-item,
+  .infos-item {
+    margin: 9px 0;
+    height: calc(100% - 18px);
+    z-index: 2;
+  }
+
+  .img-item {
+    background-image: url(/assets/images/honeymoon.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 160px;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+  }
+
+  .infos-item {
+    @extend %display-flex;
+    @extend %flex-direction-column;
+
+    p,
+    span {
+      @extend %color-dusty-gray;
+      font-size: 12px;
+    }
+
+    p {
+      @extend %font-myriad-semibold;
+      margin: 0;
+    }
+
+    span {
+      @extend %font-myriad;
+      margin: 10px 0;
+    }
+
+    button {
+      @extend %text-uppercase;
+      @extend %font-myriad-semibold;
+      @extend %color-wewak;
+      @extend %padding0;
+      box-shadow: none !important;
+      border: 1px solid $wewak;
+      border-radius: 100px;
+      line-height: 1;
+      font-size: 10px;
+      width: 151px;
+      height: 25px;
+    }
+  }
+}

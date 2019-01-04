@@ -1,0 +1,75 @@
+lc-timeline-item {
+  @extend %display-flex;
+  margin: 0 0 20px 0;
+
+  .button-action {
+
+    .fab-more {
+      @extend %display-flex;
+      @extend .justify-content-center;
+      @extend .align-items-center;
+      @extend %border0;
+      @extend %border-radius50;
+      @extend %color-boston-blue;
+      width: 31px;
+      height: 31px;
+      min-width: 31px;
+      max-width: 31px;
+      box-shadow: none;
+      background: #fff;
+      z-index: 5;
+      border: 1px solid $boston-blue;
+
+      span {
+        line-height: 0;
+        font-size: 25px;
+      }
+
+      &.rescue {
+        @extend %color-light-wisteria;
+        border-color: $light-wisteria;
+      }
+    }
+  }
+
+  .row {
+    @extend %width100;
+  }
+
+  .text-content {
+
+    p,
+    span {
+      @extend %font-myriad;
+      font-size: 13px;
+    }
+
+    p {
+      @extend %color-boston-blue;
+      @extend %margin0;
+
+      &.rescue {
+        @extend %color-light-wisteria;
+      }
+    }
+
+    span {
+      @extend %color-tundora;
+    }
+  }
+
+  .value {
+    margin-left: auto !important;
+
+    span {
+      @extend %font-myriad-semibold;
+      @extend %color-boston-blue;
+      font-size: 13px;
+
+      &.rescue {
+        @extend %color-light-wisteria;
+      }
+    }
+  }
+
+}

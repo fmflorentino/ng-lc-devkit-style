@@ -1,0 +1,25 @@
+lc-filter-select {
+  button {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-color: #fff;
+    border: 1px solid $wewak !important;
+    width: 179px;
+    height: 27px;
+
+    .mat-button-wrapper {
+      @extend %text-uppercase;
+      @extend %color-wewak;
+      @extend %font-size12;
+      @extend %display-flex;
+      @extend .justify-content-between;
+      @extend .align-items-center;
+      letter-spacing: 1px;
+      line-height: 0;
+    }
+  }
+}
+
+.filter-select {
+  width: 179px;
+}

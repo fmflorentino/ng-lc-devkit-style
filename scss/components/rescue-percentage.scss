@@ -1,0 +1,97 @@
+app-rescue-percentage {
+  @extend %display-block;
+
+  div.icon {
+    @extend %display-flex;
+    @extend %flex-direction-column;
+    @extend .align-items-center;
+
+    p {
+      @extend %font-myriad;
+      @extend %color-dusty-gray;
+      @extend %text-uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .percentage-content {
+    @extend %width100;
+    @extend %display-flex;
+    @extend .justify-content-center;
+    height: 154px;
+    position: relative;
+
+    div {
+      width: 50%;
+
+      span.ab {
+        @extend %font-myriad-semibold;
+        @extend %color-wewak;
+        font-size: 20px;
+      }
+
+      p.ab {
+        @extend %font-myriad;
+        @extend %font-size12;
+        @extend %color-dusty-gray;
+        text-transform: initial;
+        position: absolute;
+        text-align: center;
+        top: 40px;
+        left: 40px;
+      }
+    }
+
+    mat-progress-spinner {
+      position: absolute;
+      z-index: 2;
+      height: 154px !important;
+      width: 154px !important;
+
+      svg {
+        height: 154px !important;
+        width: 154px !important;
+
+        circle {
+          stroke: $wewak;
+        }
+      }
+
+      &.back-spinner {
+        z-index: -1;
+
+        circle {
+          stroke: #F4F4F6;
+        }
+      }
+    }
+
+    .quotas-info {
+      @extend %display-flex;
+      @extend %flex-direction-column;
+      align-items: flex-end;
+      justify-content: center;
+
+      p {
+        @extend %font-myriad;
+        @extend %color-dusty-gray;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 0;
+
+        &.bottom {
+          padding-top: 19px;
+        }
+
+      }
+
+      span {
+        @extend %font-myriad-semibold;
+        @extend %color-wewak;
+        font-size: 18px;
+      }
+    }
+  }
+}

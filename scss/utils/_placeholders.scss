@@ -1,0 +1,119 @@
+%width100 {
+  width: 100%;
+}
+
+%height100 {
+  height: 100%;
+}
+
+%display-block {
+  display: block;
+}
+
+%display-flex {
+  display: flex;
+}
+
+%display-none {
+  display: none;
+}
+
+%flex-direction-column {
+  flex-direction: column;
+}
+
+%margin0 {
+  margin: 0;
+}
+
+%padding0 {
+  padding: 0;
+}
+
+%text-uppercase {
+  text-transform: uppercase;
+}
+
+%font-myriad {
+  font-family: "Myriad Pro";
+}
+
+%font-myriad-bold {
+  font-family: 'Myriad Pro Bold';
+}
+
+%font-myriad-semibold {
+  font-family: 'Myriad Pro SemiBold';
+}
+
+%font-lora {
+  font-family: 'Lora';
+}
+
+%font-lora-bold {
+  font-family: 'Lora Bold';
+}
+
+%font-lora-italic {
+  font-family: 'Lora Italic';
+}
+
+%font-size12 {
+  font-size: 12px;
+}
+
+%color-wewak {
+  color: $wewak;
+}
+
+%color-dusty-gray {
+  color: $dusty-gray;
+}
+
+%color-fountain-blue {
+  color: $fountain-blue;
+}
+
+%color-mercury {
+  color: $mercury;
+}
+
+%color-boston-blue {
+  color: $boston-blue !important;
+}
+
+%color-tundora {
+  color: $tundora;
+}
+
+%color-light-wisteria {
+  color: $light-wisteria
+}
+
+
+%bg-mercury {
+  background-color: $mercury;
+}
+
+%bg-athens-gray {
+  background-color: $athens-gray;
+}
+
+%bg-wewak {
+  background-color: $wewak !important;
+}
+
+
+%border-radius50 {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+%border0 {
+  border: 0;
+}
+
+%text-center {
+  text-align: center;
+}

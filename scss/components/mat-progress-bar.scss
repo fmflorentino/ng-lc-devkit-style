@@ -1,0 +1,146 @@
+%border-radius-progress {
+  border-radius: 7.5px;
+}
+
+lc-progress-bar {
+  @extend %display-block;
+  margin-bottom: 27px;
+
+  .second-progress-bar {
+    margin-top: 26px;
+  }
+
+  div.icon {
+    @extend %display-flex;
+    @extend %flex-direction-column;
+    @extend .align-items-center;
+
+    p {
+      @extend %font-myriad;
+      @extend %color-dusty-gray;
+      @extend %text-uppercase;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 44px;
+    }
+  }
+
+  div.texts {
+    @extend %display-flex;
+    @extend .justify-content-between;
+
+    span {
+      @extend %font-myriad-bold;
+      @extend %color-dusty-gray;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 18px;
+      margin: 0 0 5px 0;
+
+      &.green {
+        color: #4FB4B6;
+      }
+
+      &.blue {
+        color: #3882C9;
+      }
+
+      &.pink {
+        @extend %color-light-wisteria;
+      }
+
+      &.bottom {
+        @extend %font-myriad;
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+
+  .mat-progress-bar {
+    @extend %border-radius-progress;
+    height: 15px;
+
+    .mat-progress-bar-buffer {
+      background-color: #F4F4F6;
+    }
+
+    .mat-progress-bar-fill {
+      &::after {
+        @extend %border-radius-progress;
+      }
+    }
+
+    &.blue {
+      .mat-progress-bar-fill::after {
+        background-color: #3882C9;
+      }
+
+      &:hover {
+        .mat-progress-bar-fill::after {
+          @extend .animated-background
+        }
+      }
+    }
+
+    &.green {
+      .mat-progress-bar-fill::after {
+        background-color: #4FB4B6;
+      }
+
+      &:hover {
+        .mat-progress-bar-fill::after {
+          @extend .animated-background2
+        }
+      }
+    }
+
+    &.pink {
+      .mat-progress-bar-fill::after {
+        background-color: $light-wisteria;
+      }
+
+      &:hover {
+        .mat-progress-bar-fill::after {
+          @extend .animated-background2
+        }
+      }
+    }
+  }
+}
+
+
+.animated-background {
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #3882C9;
+  background: linear-gradient(to right, #3882C9 8%, lighten(#3882C9, 10%) 18%, #3882C9 33%);
+  background-size: 100%;
+}
+
+.animated-background2 {
+  animation-duration: 1.75s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: #4FB4B6;
+  background: linear-gradient(to right, #4FB4B6 8%, lighten(#4FB4B6, 10%) 18%, #4FB4B6 33%);
+  background-size: 100%;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+
+  100% {
+    background-position: 468px 0
+  }
+}

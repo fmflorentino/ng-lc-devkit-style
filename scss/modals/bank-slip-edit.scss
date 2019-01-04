@@ -1,0 +1,192 @@
+app-modal-bank-info-edit {
+  @extend %display-flex;
+  @extend %flex-direction-column;
+  @extend .justify-content-center;
+  height: 573px;
+  width: 794px;
+
+  .text-top {
+    @extend %display-flex;
+    @extend %flex-direction-column;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+  }
+
+  h2,
+  p {
+    @extend %font-myriad;
+    @extend %display-block;
+  }
+
+  h2 {
+    @extend %color-wewak;
+    @extend %text-uppercase;
+    @extend %margin0;
+    font-size: 20px;
+    letter-spacing: 3.33px;
+  }
+
+  p {
+    @extend %color-dusty-gray;
+    font-size: 13px;
+    margin: 21px 0 0 0;
+  }
+
+  form {
+    @extend %display-flex;
+    @extend %width100;
+    flex-wrap: wrap;
+    margin: 39px 0 0 0;
+
+    label,
+    input {
+      @extend %font-size12;
+    }
+
+    label {
+      @extend %color-wewak;
+      @extend %text-uppercase;
+    }
+
+    input {
+      color: $dusty-gray;
+      border: 1px solid $mercury;
+      width: 100%;
+      height: 37px;
+      padding: 0 20px;
+
+      &[disabled] {
+        background-color: $athens-gray;
+      }
+
+      &:focus {
+        outline: none !important;
+      }
+
+      &.owner {
+        @extend %text-uppercase;
+      }
+    }
+
+    .input-content {
+      position: relative;
+    }
+
+    .invalid-control {
+      color: #f00;
+      position: absolute;
+      left: 15px;
+      top: calc(100% + 5px);
+      font-size: 12px;
+    }
+
+    .select-custom {
+      button {
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        background-color: #fff;
+        border: 1px solid $mercury;
+        width: 100%;
+        height: 37px;
+
+        .mat-button-wrapper {
+          @extend %text-uppercase;
+          @extend %color-dusty-gray;
+          @extend %font-size12;
+          @extend %display-flex;
+          @extend .justify-content-between;
+          @extend .align-items-center;
+          letter-spacing: 1px;
+          line-height: 0;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .action-buttons {
+    @extend %width100;
+    padding: 0 49px;
+    margin: 50px 0 0 0;
+
+    button {
+      @extend %text-uppercase;
+      border-radius: 0;
+      box-shadow: none !important;
+      width: calc(50% - 10px);
+      height: 50px;
+
+      &[disabled] {
+        cursor: not-allowed;
+      }
+
+      &:first-child {
+        margin-right: 20px;
+      }
+
+      &.next {
+        @extend %font-myriad-bold;
+        @extend %bg-wewak;
+        color: #fff;
+      }
+
+      &.back {
+        @extend %font-myriad;
+        @extend %color-wewak;
+        border: 1px solid $wewak;
+      }
+
+      &.mob-only {
+        @extend %display-none;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:678px) {
+  app-modal-bank-info-edit {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    .input-content {
+        margin-top: 20px;
+    }
+
+    .text-top {
+      padding: 0 30px;
+
+      .detail {
+        text-align: center;
+        padding: 20px;
+      }
+    }
+
+    .bank-information {
+      padding: 0 30px;
+
+      a {
+        display: none;
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+
+      button {
+        width: 100%;
+        height: 65px;
+        margin: 0 0 10px 0;
+        justify-content: center;
+
+        &.mob-only {
+          display: flex;
+        }
+      }
+    }
+
+  }
+}

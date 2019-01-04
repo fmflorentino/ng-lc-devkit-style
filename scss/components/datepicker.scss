@@ -1,0 +1,41 @@
+lc-datepicker {
+  @extend %display-flex;
+  width: 145px;
+  height: 27px;
+  border: 1px solid #F29E9C;
+
+
+  div {
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+    background-size: 18px;
+  }
+
+  label,
+  input {
+    @extend %font-myriad;
+    @extend %font-size12;
+    @extend %color-wewak;
+    position: relative;
+    left: 10px
+  }
+
+  label {
+    @extend %margin0;
+    @extend %text-uppercase;
+    letter-spacing: 1px;
+  }
+
+  input {
+    @extend %border0;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none !important;
+    width: 80px;
+    left: 12px;
+    pointer-events: none;
+  }
+}

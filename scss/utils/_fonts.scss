@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('assets/fonts/MyriadPro-Regular.otf');
+    src: url('assets/fonts/MyriadPro-Regular.eot');
+    src: url('assets/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('assets/fonts/MyriadPro-Regular.ttf') format('truetype'),
+         url('assets/fonts/MyriadPro-Regular.woff') format('woff'), 
+         url('assets/fonts/MyriadPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('assets/fonts/MyriadPro-Bold.otf');
+    src: url('assets/fonts/MyriadPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold Italic';
+    src: url('assets/fonts/MyriadPro-BoldIt.otf');
+    src: url('assets/fonts/MyriadPro-BoldIt.eot');
+    src: url('assets/fonts/MyriadPro-BoldIt.eot?#iefix') format('embedded-opentype'), url('assets/fonts/MyriadPro-BoldIt.woff2') format('woff2'),
+        url('assets/fonts/MyriadPro-BoldIt.woff') format('woff'), url('assets/fonts/MyriadPro-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro SemiBold';
+    src: url('assets/fonts/MyriadPro-Semibold.otf');
+    src: url('assets/fonts/MyriadPro-Semibold.otf');
+    src: url('assets/fonts/MyriadPro-Semibold.eot');
+    src: url('assets/fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/MyriadPro-Semibold.woff2') format('woff2'),
+        url('assets/fonts/MyriadPro-Semibold.woff') format('woff'), url('assets/fonts/MyriadPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('assets/fonts/MyriadPro-SemiboldIt.otf');
+    src: url('assets/fonts/MyriadPro-SemiboldIt.eot');
+    src: url('assets/fonts/MyriadPro-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/MyriadPro-SemiboldIt.woff') format('woff'), 
+        url('assets/fonts/MyriadPro-SemiboldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('assets/fonts/MyriadPro-It.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Lora-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lora Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('assets/fonts/Lora-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Lora Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/fonts/Lora-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lora old Italic';
+    font-style: italic;
+    font-weight: bold;
+    src: url('assets/fonts/Lora-BoldItalic.ttf');
+}

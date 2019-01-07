@@ -117,3 +117,28 @@
 %text-center {
   text-align: center;
 }
+
+%border-radius0 {
+  border-radius: 0 !important;
+}
+
+%box-shadow0 {
+  box-shadow: none !important;
+}
+
+%btn-primary {
+  @extend %border-radius0;
+  @extend %box-shadow0;
+  @extend %text-uppercase;
+  @extend %font-myriad-bold;
+  border: 1px solid $wewak !important;
+}
+
+%btn-accent {
+  @extend %border-radius0;
+  @extend %box-shadow0;
+  @extend %text-uppercase;
+  @extend %font-myriad-bold;
+  @extend %color-wewak;
+  border: 1px solid $wewak !important;
+}

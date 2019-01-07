@@ -1,0 +1,15 @@
+button {
+    cursor: pointer;
+
+    &.primary-btn {
+        @extend %btn-primary;
+    }
+
+    &.accent-btn {
+        @extend %btn-accent;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
